@@ -1,0 +1,236 @@
+body{
+	min-height: 100vh;
+	position: relative;
+}
+
+body#login{
+	height: 100vh;
+	background: url(../img/primary-background.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+body#login .img-responsive{
+	margin: auto;
+}
+
+form#login-form{
+	margin: auto;
+}
+
+form#login-form input{
+	width: 280px;
+	margin: 0px auto;
+	display: block;
+}
+
+form#login-form a{
+	width: 280px;
+	margin: 0px auto;
+}
+
+#flare{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background: url(../img/secondary-background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 150px;
+	z-index: -1;
+}
+
+#login-fields{
+	position: relative;
+}
+
+#login-tip{
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #aaa;
+}
+
+hr{
+	margin: 15px 0px;
+}
+
+img#logo{
+	width: 100%;
+	max-width: 960px;
+}
+
+.img-responsive{
+	max-height: 100%;
+}
+
+.navbar-brand{
+	padding: 0px;
+}
+
+a.full-width{
+	min-width: 330px;
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+.login-third{
+	display: flex;
+	flex-direction: column;
+	height: 33vh;
+}
+
+.login-third.graphic{
+	/*background: url(../img/primary-background.jpg);*/
+	background-size: cover;
+}
+
+.panel-primary .panel-title{
+	color: #fafafa;
+}
+
+#customer-nav{
+	height: 100vh;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	padding: 0px;
+}
+
+.side-navigation{
+	width: 100%;
+	z-index: -1;
+}
+
+.side-navigation ul{
+	padding: 0px;
+	width: 100%;
+	list-style-type: none;
+}
+
+.side-navigation ul li a{
+	color: #fff;
+	display: block;
+	font-size: 1.15em;
+	line-height: 2.25em;
+	font-family: Roboto Slab, serif;
+	text-decoration: none;
+	padding: 10px 15px;
+	position: relative;
+}
+
+.side-navigation ul li > ul li a{
+	padding-left: 30px;
+}
+
+.side-navigation ul li a:hover:active{
+	background: rgb(81,50,79);
+}
+
+.side-tag{
+	position: absolute;
+	left: -2px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: block;
+	font-size: 1.25rem;
+	z-index: 0;
+}
+
+.side-tag:before{
+	content: '';
+	display: block;
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	top: 25%;
+	left: -7px;
+	border-radius: 50%;
+	background: #3ec1ab;
+	z-index: -1;
+}
+
+#rekis{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding: 10px;
+}
+
+.navbar-toggle, .nav{
+	position: relative;
+}
+
+.top-tag{
+	position: absolute;
+	top: 5px;
+	left: -5px;
+	color: #fafafa;
+	z-index: 0;
+}
+
+.top-tag:before{
+	content: '';
+	display: block;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: #3ec1ab;
+	z-index: -1;
+	position: absolute;
+	top: 1px;
+	left: -6px;
+}
+
+.nav-tag{
+	position: absolute;
+	top: 9px;
+	right: 25px;
+	color: #fafafa;
+	z-index: 0;
+}
+
+.nav-tag:before{
+	content: '';
+	display: block;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: #3ec1ab;
+	z-index: -1;
+	position: absolute;
+	top: 1px;
+	left: -6px;
+}
+
+.menu-icon{
+	margin-top: 12px;
+}
+
+.media-object{
+	max-height: 55px;
+}
+
+@media screen and (min-width: 768px){
+	div.collapse.navbar-collapse{
+		display: none !important;
+	}
+}
+
+@media screen and (min-width: 640px){
+	body#login{
+		background: url(../img/primary-background.jpg);
+		background-size: cover;
+	}
+	.login-third{
+		height: 50vh;
+	}
+	.login-third.logo{
+		background: #fff;
+	}
+	.login-third.graphic{
+		display: none;
+	}
+}
